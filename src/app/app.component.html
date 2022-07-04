@@ -1,0 +1,11 @@
+<div class="margin" style="text-align: center;">
+    <h1>This is a variation of a box packing algorithm that finds the next available white space inside of the div with a randomly generated shape</h1>
+<div id="container" style="height: 500px; width: 500px; position:relative; border:1px; border-style:solid; border-color:black; margin: 0 auto;"></div>
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()" #localForm="ngForm">
+<label>Enter Shape Size</label>
+<input type="text" formControlName="shapeSize"><br>
+<span *ngIf="formGroup.get('shapeSize').invalid && localForm.submitted" class="invalid-form-entry">Shape size required</span> <br>
+<button >Generate Shapes</button>
+</form>
+
+</div>
